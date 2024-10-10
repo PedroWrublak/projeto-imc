@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 :root {
-  --primary-color: rgb(17, 86, 102);
-  --primary-color-darker: rgb(9, 48, 56);
+  --primary-color: #9190F5;
+  --primary-color-darker: #3C3AA1;
+  --shadow: rgba(0, 0, 0, 0.300)
 }
 
 * {
@@ -12,7 +15,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: var(--primary-color);
+  background-image: linear-gradient(var(--primary-color), var(--primary-color-darker));
+  background-attachment: fixed;
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
@@ -24,12 +28,20 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 10px 10px 10px var(--shadow);
+}
+
+h1 {
+  text-align: center;
+  text-shadow:  3px 3px 5px var(--shadow);
+  font-family: "Roboto Slab", serif;
 }
 
 form input, form label, form button {
   display: block;
   width: 100%;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 form input {
@@ -60,8 +72,21 @@ form button:hover {
 .paragrafo-resultado, .bad {
   background: rgb(89, 218, 77);
   padding: 10px 20px;
+  border-radius: 5px;
 }
 
 .bad {
   background: rgb(250, 112, 112);
+  border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    padding-top: 90%;
+    padding: 2px;
+    margin: 370px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px var(--shadow);
 }
