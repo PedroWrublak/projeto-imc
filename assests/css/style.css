@@ -12,6 +12,41 @@
   outline: 0;
 }
 
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header > div {
+  display: flex;
+  color: aliceblue;
+  border-radius: 5px;
+  width: 90px;
+  height: 25px;
+  margin: 10px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 5px 5px 5px var(--shadow);
+}
+
+header > div > a {
+  color: var(--primary-color-darker);
+  font-weight: bold;
+  font-size: 0.8em;
+  text-decoration: none;
+  padding: 10px;
+}
+
+header > div:hover {
+  background-color: var(--primary-color-darker);
+}
+
+a:hover {
+  color: white;
+}
+
 body {
   margin: 0;
   padding: 0;
